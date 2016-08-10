@@ -1,0 +1,224 @@
+body
+{
+	color: #383336;
+	margin: 0;
+	padding: 0;
+}
+nav{
+	padding-top: 11%;
+}
+#neotown-image{
+	margin-left: 31%;
+	margin-top: 15%;
+}
+#section-1
+{
+	height: auto;
+	width: 100%;
+	background-image: url(images/blue.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 100px;
+	/*border-bottom: 1px none #B22222; /*try "inset", ridge" or "groove"
+	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 30%;*/
+}
+ul
+{
+	list-style-type: none; 
+	text-align: center;
+	padding: 0;
+}
+ul li a
+{
+	text-decoration: none;
+	color: #383336;
+	font-size: 125%;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+ul li
+{
+	margin: 11px 8px;
+	padding:  2px;
+	display: inline-block;
+}
+.active
+{
+	color: #C73B40;
+}
+ul a:hover
+{	
+	color:#C73B40;
+}
+ul a:active{
+	color: black;
+}
+#map-section{
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#gmap_canvas
+{
+	height: 350px;
+	width: 450px;
+	margin: 5px 0 0 0;
+}
+.find{
+	margin-top: -15%;
+	margin-left: -20px;
+}
+.find-us{
+	padding-top: 40%;
+	text-align: center;
+	font-family: nevis;
+	font-weight: bold;
+	font-size: 50px;
+}
+#gallery-section
+{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	padding: 10px 50px;
+	text-align: center;
+	
+	/*background: linear-gradient(to bottom, #383336, black);*/
+	/*background: radial-gradient(circle farthest-corner at 50% 55%, #383336, black);*/
+}
+.img-rounded{
+	opacity: 0.8;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+}
+.img-rounded:hover{
+	opacity: 1;
+	box-shadow: 0 0 3px 2px #EBEBEB; /*text-info color -> #81DAF5*/
+}
+#maintainance-section{
+	margin-top: 50px;
+	padding: 100px 30px 50px;
+	/*border: 1px solid black;*/
+}
+/*.maintainance{
+	width: 100%;
+	height: 150px;
+	padding: 0px;
+	background-color: #EBEBEB;
+	/*border: 1px solid black;*/
+/*	border-radius: 5px;
+}*/
+#shop-section{
+	padding-bottom: 50px;
+}
+#sign-in-section{
+	width: 100%;
+	height: 720px;
+}
+.form-class{
+	padding-top: 1%;
+}
+input[type=text]:focus{
+	color: green;
+}
+.shops{
+	text-align: center;
+	border-radius: 7px;	
+	height: 150px;
+	padding-top: 15px;
+	font-family: 'Trebuchet MS';
+}
+.shops:hover{
+	/*transition: 0.5s;*/
+	background: linear-gradient(to right, #EBEBEB, white, #EBEBEB);
+}
+.shops-with-link:hover{
+	border: 1px solid #01A9DB;
+	transition: 0.8s;
+}
+.raddiman{
+	text-decoration: none;
+	color: #4B2264;
+}
+#novel-fresh{
+	padding-top: 16px;
+}
+.bold{
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.novel-fresh{
+	
+	letter-spacing: 3px;
+	color: green;
+}
+#search{
+    margin-top: 20px;
+    width: 150px;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+#search:focus {
+    width: 90%;
+    color: #31708F;
+}
+.lookup{
+	margin-top: 15px;
+}
+.teatime{
+	color: #E99944;
+}
+.village{
+	color: #456;
+}
+.ramakrishna-hospital{
+	color: #051017;
+	margin-top: 18px;
+	letter-spacing: 1px;
+	text-shadow: 0 0 6px #216E9D;
+}
+.smondoville-phar{
+	letter-spacing: 1px;
+	color: #31708F;
+	text-shadow: 0 0 6px #48AF8F;
+}
+.smondoville-phar-image{
+	margin-bottom: 17px;
+}
+.number{
+	font-family: 'Trebuchet MS';
+	letter-spacing: 1px;
+}
+.number-margin{
+	margin-top: -30px;
+}
+.adarsh-cafe{
+	letter-spacing: 3px;
+	color: #593C1F;
+}
+footer{
+	width: 100%;
+	height: auto;
+	margin-top: -10px;
+}
+footer p{
+	color: #777;
+	font-family: cursive;
+	text-align: center;
+	margin-bottom: -18px;
+}
+.heart{
+	transition: 1s;
+}
+.heart:hover{
+	color: #FF6600;
+	letter-spacing: 2px;
+}
+hr{
+	width: 150px;
+}
