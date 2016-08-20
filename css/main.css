@@ -6,6 +6,8 @@ body
 }
 nav{
 	padding-top: 13%;
+/*	background-color: #222222;
+	padding-top: 10px;*/
 }
 #neotown-image{
 	margin-left: auto;
@@ -275,6 +277,9 @@ hr{
 	z-index: 1;
 }
 #upward-nav:hover{
-	box-shadow: 0px 0px 1px 1px #151515;
 	background-color: #2a2a2a;
+	opacity: 0.9;
+}
+#gallery-section .row div{
+	padding: 10px;
 }
