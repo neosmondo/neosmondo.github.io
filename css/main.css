@@ -17,7 +17,7 @@ nav{
 	height: 702px;
 	max-height: 702px;
 	width: 100%;
-	background-image: url(/images/blue.jpg);
+	background-image: url(images/blue.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	
@@ -46,10 +46,10 @@ ul li
 	padding:  2px;
 	display: inline-block;
 }
-.active
+/*.active
 {
 	color: #C73B40;
-}
+}*/
 ul a:hover
 {	
 	color:#C73B40;
@@ -221,6 +221,7 @@ footer p{
 	padding-top: -10px;
 }
 .heart{
+	font-size: 95%;
 	transition: 1s;
 }
 .heart:hover{
@@ -257,4 +258,21 @@ hr{
 }
 #maintainance-section{
 	padding-bottom: 30px;
+}
+#upward-nav{
+	float: right;
+	/*background: linear-gradient(black, black);*/
+	background-color: #3f3f3f;
+	color: #ebebeb;
+	outline: none;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	left: 95%;
+	bottom: 20px;
+	transition: 0.8s;
+}
+#upward-nav:hover{
+	box-shadow: 1px 1px 3px 1px black;
+	background-color: #151515;
 }
