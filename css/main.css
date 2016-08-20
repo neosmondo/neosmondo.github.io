@@ -147,10 +147,6 @@ input[type=text]:focus{
 	/*transition: 0.5s;*/
 	background: linear-gradient(to right, #EBEBEB, white, #EBEBEB);
 }
-.shops-with-link:hover{
-	border: 1px solid #01A9DB;
-	transition: 0.8s;
-}
 .raddiman{
 	text-decoration: none;
 	color: #4B2264;
