@@ -96,7 +96,7 @@ ul a:active{
 	margin-top: -25px;
 	padding-bottom: 50px;
 	font-size: 50px;
-	letter-spacing: 70px;
+	/*letter-spacing: 70px;*/
 }
 .img-rounded{
 	opacity: 0.8;
