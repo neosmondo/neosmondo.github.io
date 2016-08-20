@@ -17,7 +17,7 @@ nav{
 	height: 702px;
 	max-height: 702px;
 	width: 100%;
-	background-image: url(/images/blue.jpg);
+	background-image: url(images/blue.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	
@@ -96,7 +96,7 @@ ul a:active{
 	margin-top: -25px;
 	padding-bottom: 50px;
 	font-size: 50px;
-/*	letter-spacing: 70px;*/
+	/*	letter-spacing: 70px;*/
 }
 .img-rounded{
 	opacity: 0.8;
@@ -207,12 +207,18 @@ input[type=text]:focus{
 footer{
 	width: 100%;
 	height: auto;
-}
+	background-color: #D3EDEC;
+	/*background-image: url(images/blue.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}	
 footer p{
 	color: #777;
 	font-family: cursive;
 	text-align: center;
-	
+}
+#footer-image{
+	padding-top: -10px;
 }
 .heart{
 	transition: 1s;
@@ -225,7 +231,7 @@ hr{
 	width: 150px;
 }
 #maintainance-and-helpline-section{
-/*	margin-bottom: 43px;*/
+	/*	margin-bottom: 43px;*/
 	padding: 10px 0 0px 0;
 	text-align: center;
 	/*border: 1px solid black;*/
