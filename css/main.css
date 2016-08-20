@@ -271,7 +271,7 @@ hr{
 	left: 1%;
 	bottom: 20px;
 	transition: 0.8s;
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index: 1;
 }
 #upward-nav:hover{
