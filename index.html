@@ -4,15 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Joel George">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css"><!--Bootstrap library-->
-	<link rel="stylesheet" type="text/css" href="font-awesome/font-awesome.min.css"><!--Font Awesome library-->
-	<link rel="stylesheet" type="text/css" href="css/animate.css"><!--animate.css library-->
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/bootstrap.min.css"><!--Bootstrap library-->
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/font-awesome.min.css"><!--Font Awesome library-->
+	<link rel="stylesheet" type="text/css" href="animate.css"><!--animate.css library-->
 	<script src="jQuery/jquery-3.1.0.min.js"></script><!--jQuery library-->
-	<script src="bootstrapt/bootstrap.min.js"></script><!--Compiled JavaScript-->
+	<script src="bootstrap-3.3.6-dist/bootstrap.min.js"></script><!--Compiled JavaScript-->
 
 	<title>Smondo 3.0</title>
 	<script>
@@ -26,7 +26,7 @@
 		<div>
 			<img id="neotown-image" class="img-responsive" src="images/smondo_sym.png" width="500px" height="260px" alt="Neotown Smondo 3">
 		</div>
-		<nav>
+		<nav id="nav">
 			<ul>
 				<li class="active"><a class="active" href="copy3.html">HOME</a></li>
 				<li><a href="#shop-section">IN & AROUND</a></li>
@@ -50,7 +50,7 @@
 		<!--////////////////////////////SHOPS-ROW-1//////////////////-->
 		<div class="row">
 			<a href="http://www.raddiman.com/" target="_blank">
-				<div id="raddiman" class="shops shops-with-link col-sm-4 raddiman" style="padding-top: 20px;">
+				<div id="raddiman" class="shops shops-with-link col-sm-4" style="padding-top: 20px;">
 					<img src="images/raddiman.png" alt="Raddiman">
 					<br/><span class="raddiman">Sell your old stuff online!</span>
 					<br/><span class="number" style="color: black;">+91 8880995710</span>			
@@ -61,133 +61,141 @@
 				<br/><p class="novel-fresh bold">NOVEL FRESH</p>
 				<br/><p class="number number-margin">+91 9598579579</p>
 			</div>
-			<a href="http://www.villagehyper.com/" target="_blank">
-				<div id="village" class="shops shops-with-link col-sm-4;">
-					<img src="images/village.png" alt="Village Hypermarket">
-					<br/><span class="village">Village Hypermarket</span>		
+			<div class="col-sm-4">
+				<a href="http://www.villagehyper.com/" target="_blank">
+					<div id="village" class="shops shops-with-link village">
+						<img src="images/village.png" alt="Village Hypermarket">
+						<br/><span class="village bold">Village Hypermarket</span>		
+					</div>
+				</a>
+			</div>
+			<br/>
+			<!--//////////////////////////SHOPS-ROW-2////////////////////-->
+			<div class="row" style="color: #593C1F">
+				<div id="teatime" style="padding-top: 25px;" class="shops col-sm-4">
+					<img src="images/teatime.png" height="80px" alt="Tea Time"><br/>
+					<p class="bold teatime adarsh-cafe">TEA TIME</p>
+					<br/><p class="number number-margin">+91 8049515400</p>
 				</div>
-			</a>
-		</div>
-		<br/>
-		<!--//////////////////////////SHOPS-ROW-2////////////////////-->
-		<div class="row" style="color: #593C1F">
-			<div id="teatime" style="padding-top: 25px;" class="shops col-sm-4">
-				<img src="images/teatime.png" height="80px" alt="Tea Time"><br/>
-				<p class="bold teatime adarsh-cafe">TEA TIME</p>
-				<br/><p class="number number-margin">+91 8049515400</p>
-			</div>
-			<div id="adarsh-cafe" class="shops col-sm-4">
-				<img src="images/adarsh-cafe.png" height="90px" alt="Adarsh Cafe">
-				<br/><p class="bold adarsh-cafe">ADARSH CAFE</p>
-				<br/><p class="number number-margin">+91 7795990857</p>
-			</div>
-			<div id="food-joint" style="padding-top: 14px;" class="shops col-sm-4">
-				<img src="images/food-joint.png" height="90px" alt="Food Joint"><br/>
-				<p class="bold adarsh-cafe">FOOD JOINT</p>
-				<br/><p class="number number-margin">+91 9738991713</p>
-			</div>
-		</div>
-		<br/>
-		<!--///////////////////////////SHOPS-ROW-3////////////////////-->
-		<div class="row">
-			<a style="color: #3B7B81;" href="http://www.apollopharmacy.in/ordermedicine/" target="_blank">
-				<div id="appolo" class="shops shops-with-link col-sm-4" style="padding-top: 11px;">
-					<img class="appolo" src="images/appolo.png" height=90px alt="Appolo Pharmacy">
-					<br/>Order Medicine Online
+				<div id="adarsh-cafe" class="shops col-sm-4">
+					<img src="images/adarsh-cafe.png" height="90px" alt="Adarsh Cafe">
+					<br/><p class="bold adarsh-cafe">ADARSH CAFE</p>
+					<br/><p class="number number-margin">+91 7795990857</p>
 				</div>
-			</a>
-			<a href="http://rkhealth.com/about-rk/rk-hospitals-facilities/" target="_blank">
-				<div id="ramakrishna-hospital" style="padding-top: 27px;" class="shops shops-with-link col-sm-4">
-					<img src="images/rklogo-web.png" alt="Ramakrishna Hospital">
-					<br/><p class="ramakrishna-hospital">Ramakrishna Hospital</p>	
+				<div id="food-joint" style="padding-top: 14px;" class="shops col-sm-4">
+					<img src="images/food-joint.png" height="90px" alt="Food Joint"><br/>
+					<p class="bold adarsh-cafe">FOOD JOINT</p>
+					<br/><p class="number number-margin">+91 9738991713</p>
 				</div>
-			</a>
-			<div id="smondoville-phar" style="padding-top: 26px;" class="shops col-sm-4">
-				<img class="smondoville-phar-image" src="images/smondoville-pharmacy.png" height="60px" alt="Somonville Pharmacy">
-				<br/><p class="smondoville-phar">SMONDOVILLE PHARMACY</p>
-				<br/><p class="number number-margin">+91 8049548048</p>
 			</div>
-		</div>
-		<br/>
-		<!--///////////////////////////SHOPS-ROW-4/////////////////////-->
-		<div class="row">
-			<div id="lookup-beauty-parlour" class="shops col-sm-4">
-				<img class="lookup" src="images/lookup.jpg" width="200px" height="70px" alt="Lookup Beauty Parlour">
-				<br/><p>Lookup Beauty Parlour</p>
-				<br/><p class="number number-margin">+91 64604232</p>
-			</div>
-			<div id="sri-rama-news-agency" class="shops col-sm-4">
-				<img style="margin-top: 8px;" src="images/newpaper.png" height="70px" alt="Sri Rama News Agency">
-				<br/><p>Sri Rama News Agency</p>
-				<br/><p class="number number-margin">+91 9448619118</p>
-			</div>
-			<div id="humpty-dumpty" class="shops col-sm-4">
-				<p class="bold">HUMPTY DUMPTY</p>
-			</div>
-		</div>
-		<br/>
-		<!--///////////////////////////SHOPS-ROW-5//////////////////////-->
-		<div class="row">
-			<div id="sandesh-sweets" class="shops col-sm-4">
-				<p>Sandesh Sweets & Chats</p>
-			</div>
-			<a href="https://www.zomato.com/bangalore/thalassery-restaurant-electronic-city/info" target="_blank">
-				<div id="thalassery-restaurant" class="shops shops-with-link col-sm-4">
-					
-					<img src="images/thalassery.PNG" height=90px alt="Thalassery restaurant">
+			<br/>
+			<!--///////////////////////////SHOPS-ROW-3////////////////////-->
+			<div class="row">
+				<a style="color: #3B7B81;" href="http://www.apollopharmacy.in/ordermedicine/" target="_blank">
+					<div id="appolo" class="shops shops-with-link col-sm-4" style="padding-top: 11px;">
+						<img class="appolo" src="images/appolo.png" height=90px alt="Appolo Pharmacy">
+						<br/>Order Medicine Online
+					</div>
+				</a>
+				<a href="http://rkhealth.com/about-rk/rk-hospitals-facilities/" target="_blank">
+					<div id="ramakrishna-hospital" style="padding-top: 27px;" class="shops shops-with-link col-sm-4">
+						<img src="images/rklogo-web.png" alt="Ramakrishna Hospital">
+						<br/><p class="ramakrishna-hospital">Ramakrishna Hospital</p>	
+					</div>
+				</a>
+				<div id="smondoville-phar" style="padding-top: 26px;" class="shops col-sm-4">
+					<img class="smondoville-phar-image" src="images/smondoville-pharmacy.png" height="60px" alt="Somonville Pharmacy">
+					<br/><p class="smondoville-phar">SMONDOVILLE PHARMACY</p>
+					<br/><p class="number number-margin">+91 8049548048</p>
 				</div>
-			</a>
-			<div class="shops col-sm-4">
+			</div>
+			<br/>
+			<!--///////////////////////////SHOPS-ROW-4/////////////////////-->
+			<div class="row">
+				<div id="lookup-beauty-parlour" class="shops col-sm-4">
+					<img class="lookup" src="images/lookup.jpg" width="200px" height="70px" alt="Lookup Beauty Parlour">
+					<br/><p class="bold">Lookup Beauty Parlour</p>
+					<br/><p class="number number-margin">+91 64604232</p>
+				</div>
+				<div id="sri-rama-news-agency" class="shops col-sm-4">
+					<img style="margin-top: 8px;" src="images/newpaper.png" height="70px" alt="Sri Rama News Agency">
+					<br/><p style="margin-top: 8px;" class="bold">Sri Rama News Agency</p>
+					<br/><p class="number number-margin">+91 9448619118</p>
+				</div>
+				<div id="humpty-dumpty" class="shops col-sm-4">
+					<img src="images/humpty-dumpty.png" height="90">
+					<p class="adarsh-cafe bold">HUMPTY DUMPTY</p>
+					<br/><p class="number number-margin">+91 9620032175</p>
+				</div>
+			</div>
+			<br/>
+			<!--///////////////////////////SHOPS-ROW-5//////////////////////-->
+			<div class="row">
+				<div id="sandesh-sweets" class="shops col-sm-4">
+					<img src="images/sandesh-sweets.jpg" height="90px">
+					<p class="bold">Sandesh Sweets & Chats</p>
+					<br/><p class="number number-margin">+91 8884200733 (<span style="font-size: 80%;">Home Delivery Available</span>)</p>
+					<!-- <p style="margin-top: -10px;"><span style="font-size: 50%; line-height: -2px;">Home Delivery Available</span></p> -->
+				</div>
+				<a href="https://www.zomato.com/bangalore/thalassery-restaurant-electronic-city/info" target="_blank">
+					<div id="thalassery-restaurant" class="shops shops-with-link col-sm-4">
+						<img src="images/thalassery.PNG" height=100px alt="Thalassery restaurant">
+						<p style="margin-top: 8px; color: black;" class="number">+91 7022910222</p>
+					</div>
+				</a>
+				<div class="shops col-sm-4">
+					<img src="images/tire_repair_man.png" height="90">
+					<p class="adarsh-cafe bold">PUNCHER MAN</p>
+					<br/><p class="number number-margin">+91 8892176338</p>
+				</div>
+			</div>
+			<!--////////////////////////////END OF SHOPS////////////////////////////////////////-->
+		</section>
+		<!--//////////////////////////SECTION 4 ENDS HERE////////////////////////////////////////////////////////////////////////////////////////-->
 
-			</div>
-		</div>
-		<!--////////////////////////////END OF SHOPS////////////////////////////////////////-->
-	</section>
-	<!--//////////////////////////SECTION 4 ENDS HERE////////////////////////////////////////////////////////////////////////////////////////-->
 
-
-	<!--//////////////////////////-G A L L E R Y ///////////////////////////////////////////////////////////////////-->
-	<section id="gallery-section" class="container">
-<!-- 		<div>
-			<h1>GALLERY</h1>
-		</div> -->
-		<div class="row">
+		<!--//////////////////////////-G A L L E R Y ///////////////////////////////////////////////////////////////////-->
+		<section id="gallery-section" class="container">
+			<div>
+				<h1 class="gallery text-info text-center">GALLERY</h1>
+			</div>
+			<div class="row">
+				<div style="height: 220px; padding: 0 16px 10px;" class="col-sm-3">
+					<img style="position: relative; height: 215px; width: 350px;" class="img-responsive img-rounded " src="images/gallery/building (1).JPG" alt="" >
+				</div>
 			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/book.jpg" alt="" width="304" height="236">
+				<img class="img-responsive img-rounded " src="images/gallery/building (2).JPG" alt="" width="304" height="236">
 			</div>
 			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/bulb-1.jpg" alt="" width="304" height="236">
+				<img class="img-responsive img-rounded " src="images/gallery/building (3).JPG" alt="" width="304" height="236">
 			</div>
 			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/bulb-2.jpg" alt="" width="304" height="236">
-			</div>
-			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/bulb-3.jpg" alt="" width="304" height="236">
+				<img class="img-responsive img-rounded " src="images/gallery/building (4).JPG" alt="" width="304" height="236">
 			</div>			
 		</div>
 		<br/>
 
 		<div class="row">
 			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/bulb-4.jpg" alt="" width="304" height="236">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (1).jpg" alt="" width="304" height="236">
 			</div>
 			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/bulb-5.jpg" alt="" width="304" height="236">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (5).jpg" alt="" width="304" height="236">
 			</div>
 			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/lighter.jpg" alt="" width="304" height="236">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (2).jpg" alt="" width="304" height="236">
 			</div>
 			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/record.jpg" alt="" width="304" height="236">
-			</div>			
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (3).jpg" alt="" width="304" height="236">
+			</div>
 		</div>
 		<br/>
 
 		<div class="row">
 			<div class="col-sm-3">
-				<img class="img-responsive img-rounded " src="images/gallery/clouds.jpg" alt="" width="304" height="236">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (4).jpg" alt="" width="304" height="236">
 			</div>
-			<div class="col-sm-3">
+<!-- 			<div class="col-sm-3">
 				<img class="img-responsive img-rounded " src="images/gallery/road.jpg" alt="" width="304" height="236">
 			</div>
 			<div class="col-sm-3">
@@ -195,11 +203,11 @@
 			</div>
 			<div class="col-sm-3">
 				<img class="img-responsive img-rounded " src="images/gallery/photograph.jpg" alt="" width="304" height="236">
-			</div>			
+			</div>	 -->		
 		</div>
 		<br/>
 
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-sm-3">
 				<img class="img-responsive img-rounded " src="images/gallery/camp-fire.jpg" alt="" width="304" height="236">
 			</div>
@@ -212,7 +220,7 @@
 			<div class="col-sm-3">
 				<img class="img-responsive img-rounded " src="images/gallery/lightening.jpg" alt="" width="304" height="236">
 			</div>			
-		</div>
+		</div> -->
 	</section>
 	<!--------------------GALLERY ENDS HERE------------------------------------------------>
 	<!-- <section id="sign-in-section" class="container">
@@ -250,30 +258,46 @@
 
 
 	<section id="maintainance-section" class="container">
+		<h1 class="text-danger">MAINTAINANCE<br/><br/></h1>
+		<div class="row maintainance-first-row">
+			<div class="col-sm-offset-4">
+				<div class="col-sm-3 maintain-style" style="margin-right: 10px">
+					<div class="maintain">
+						<h1><small>Office</small></h1>
+						<p>+91 8042835500</p>
+					</div>
+				</div>
+				<div class="col-sm-3 maintain-style" style="margin-right: 10px">
+					<div class="maintain">
+						<h1><small>General</small></h1>
+						<p>+91 9880905301</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="row">
-			<div class="col-sm-2 well">
-				<h1>Prem</h1>
-				<p>+91 3333333333</p>
-			</div>
-			<div class="col-sm-2 well">
-				<h1>John</h1>
-				<p>+91 3333333333</p>
-			</div>
-			<div class="col-sm-2 well">
-				<h1>Dave</h1>
-				<p>+91 3333333333</p>
-			</div>
-			<div class="col-sm-2 well">
-				<h1>Mark</h1>
-				<p>+91 3333333333</p>
-			</div>
-			<div class="col-sm-2 well">
-				<h1>Jade</h1>
-				<p>+91 3333333333</p>
-			</div>
-			<div class="col-sm-2 well">
-				<h1>Harry</h1>
-				<p>+91 3333333333</p>
+			<div class="col-sm-offset-2">
+				<div class="col-sm-3 maintain-style" style="margin-right: 10px">
+					<div class="maintain">
+						<h1><small>Electrician</small></h1>
+						<p>Lakshman</p>
+						<p>+91 9742176841</p>
+					</div>
+				</div>
+				<div class="col-sm-3 maintain-style" style="margin-right: 10px">
+					<div class="maintain">
+						<h1><small>Plumber</small></h1>
+						<p>Knhu</p>
+						<p>+91 7259289566</p>
+					</div>
+				</div>
+				<div class="col-sm-3 maintain-style">
+					<div class="maintain">
+						<h1 class="maintainance-manager"><small>Manager</small></h1>
+						<p><small>Mahadev</small></p>
+						<p>+91 9632016220</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -284,35 +308,36 @@
 
 
 	<!--///////////////////THE FOLLOWING SECTION DESCRIBES THE MAP //////////////////////////-->	
-<!-- 	<section id="map-section">
-		<div class="container row">
+	<section id="map-section">
+<!-- 		<div class="container row">
 			<div class="col-sm-6 find">
 				<h1 class="find-us">FIND<br/>US<br/><span class="text-danger">HERE!</span></h1>
-			</div>
-			<div class="col-sm-6">
-				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-				<div id="gmap_canvas"> --><!--This block describes the dimensions of the map-->
-<!-- 					<script type='text/javascript'>
-						function init_map()
-						{
-							var myOptions = {zoom:10,center:new google.maps.LatLng(12.821398437691634,77.65988659458164),mapTypeId: google.maps.MapTypeId.HYBRID};
-							map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-							marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.821398437691634,77.65988659458164)});
-							infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br/>Smondo 3, Neotown, Bangalore, India<br/>'});
-							google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
-							infowindow.open(map,marker);
-						}
-						google.maps.event.addDomListener(window, 'load', init_map);
-					</script>
+			</div> -->
+			<div>
+				<div>
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+					<div id="gmap_canvas"><!--This block describes the dimensions of the map-->
+						<script type='text/javascript'>
+							function init_map()
+							{
+								var myOptions = {zoom:10,center:new google.maps.LatLng(12.821398437691634,77.65988659458164),mapTypeId: google.maps.MapTypeId.HYBRID};
+								map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+								marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.821398437691634,77.65988659458164)});
+								infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br/>Smondo 3, Neotown, Bangalore, India<br/>'});
+								google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+								infowindow.open(map,marker);
+							}
+							google.maps.event.addDomListener(window, 'load', init_map);
+						</script>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section> -->
-	<!--//////////////////////MAP-SECTION ENDS HERE //////////////////////////////////////////-->
-	<hr/>
+		</section>
+		<!--//////////////////////MAP-SECTION ENDS HERE //////////////////////////////////////////-->
+		<hr/>
 
-	<footer>
-		<p>Made &nbsp;with &nbsp;<span style="color: #FF6600;">&hearts;</span><br>&copy; <span class="heart">2016</span></p><br/>
-	</footer>
-</body>
-</html>
+		<footer>
+			<p>Made &nbsp;with &nbsp;<span style="color: #FF6600;">&hearts;</span><br>&copy; <span class="heart">2016</span></p><br/>
+		</footer>
+	</body>
+	</html>
