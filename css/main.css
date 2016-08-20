@@ -272,6 +272,7 @@ hr{
 	bottom: 20px;
 	transition: 0.8s;
 	opacity: 0.5;
+	z-index: 1;
 }
 #upward-nav:hover{
 	box-shadow: 0px 0px 1px 1px #151515;
