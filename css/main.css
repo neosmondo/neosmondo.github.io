@@ -20,7 +20,7 @@ nav{
 	background-image: url(/images/blue.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	
+
 	/*border-bottom: 1px none #B22222; /*try "inset", ridge" or "groove"
 	border-bottom-left-radius: 30%;
 	border-bottom-right-radius: 30%;*/
@@ -192,7 +192,6 @@ input[type=text]:focus{
 	color: #593C1F;
 	margin-top: 18px;
 	letter-spacing: 1px;
-	text-shadow: 0 0 6px #216E9D;
 }
 .smondoville-phar{
 	letter-spacing: 1px;
