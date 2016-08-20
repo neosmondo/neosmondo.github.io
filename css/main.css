@@ -53,9 +53,11 @@ ul li
 ul a:hover
 {	
 	color:#C73B40;
+	text-decoration: none;
 }
 ul a:active{
 	color: black;
+	text-decoration: none;
 }
 #map-section{
 	width: 100%;
@@ -66,7 +68,7 @@ ul a:active{
 #gmap_canvas
 {
 	height: 350px;
-	width: 450px;
+	width: 100%;
 	margin: 5px 0 0 0;
 }
 .find{
@@ -82,14 +84,19 @@ ul a:active{
 }
 #gallery-section
 {
+	background-color: #ebebeb;
 	width: 100%;
 	max-width: 100%;
 	height: auto;
-	padding: 10px 50px;
-	text-align: center;
-	
-	/*background: linear-gradient(to bottom, #383336, black);*/
-	/*background: radial-gradient(circle farthest-corner at 50% 55%, #383336, black);*/
+	padding: 70px;
+	padding-bottom: 28px;
+}
+.gallery{
+	/*background-color: #241;*/
+	margin-top: -25px;
+	padding-bottom: 50px;
+	font-size: 50px;
+	letter-spacing: 70px;
 }
 .img-rounded{
 	opacity: 0.8;
@@ -103,8 +110,8 @@ ul a:active{
 	box-shadow: 0 0 3px 2px #EBEBEB; /*text-info color -> #81DAF5*/
 }
 #maintainance-section{
-	margin-top: 50px;
-	padding: 100px 30px 50px;
+	margin-bottom: 43px;
+	padding: 170px 30px 70px;
 	text-align: center;
 	/*border: 1px solid black;*/
 }
@@ -162,14 +169,14 @@ input[type=text]:focus{
 	color: green;
 }
 #search{
-    margin-top: 20px;
-    width: 150px;
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
+	margin-top: 20px;
+	width: 150px;
+	-webkit-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
 }
 #search:focus {
-    width: 90%;
-    color: #31708F;
+	width: 90%;
+	color: #31708F;
 }
 .lookup{
 	margin-top: 15px;
@@ -179,9 +186,10 @@ input[type=text]:focus{
 }
 .village{
 	color: #456;
+	text-decoration: none;
 }
 .ramakrishna-hospital{
-	color: #051017;
+	color: #593C1F;
 	margin-top: 18px;
 	letter-spacing: 1px;
 	text-shadow: 0 0 6px #216E9D;
@@ -208,13 +216,12 @@ input[type=text]:focus{
 footer{
 	width: 100%;
 	height: auto;
-	margin-top: -10px;
 }
 footer p{
 	color: #777;
 	font-family: cursive;
 	text-align: center;
-	margin-bottom: -18px;
+	
 }
 .heart{
 	transition: 1s;
@@ -225,4 +232,23 @@ footer p{
 }
 hr{
 	width: 150px;
+}
+.maintain{
+	margin-top: -20px;
+}
+.maintainance-manager{
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 9px;
+}
+#maintainance-section .maintainance-first-row{
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.maintain-style{
+	border: 1px solid #ebebeb;
+	transition: 1s;
+}
+.maintain-style:hover{
+	border-color: #456;
 }
