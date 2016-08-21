@@ -23,13 +23,20 @@
 	<script src="bootstrap/bootstrap.min.js"></script><!--Compiled JavaScript-->
 
 	<title>Smondo 3.0</title>
-	<script>
+<script>
 	$(document).ready(function(){
 		$("#neotown-image").addClass("animated flip");
 		$(document).ready(function(){
 			$("#upward-nav").click(function(){
 				$("#menuu").fadeIn();
-				$("#menuu").fadeOut(6000);
+			});
+
+			$(window).scroll(function(){                          
+				if ($(this).scrollTop() > 700) {
+					$('#upward-nav').fadeIn(1000);
+				} else {
+					$('#upward-nav').fadeOut(1000);
+				}
 			});
 		});
 	});
@@ -53,6 +60,13 @@
 		</nav>
 	</section>
 
+<!-- 	<div>
+		<a href="#section-1" class="text-center">
+			<div id="upward-nav" class="btn">
+				<p>up</p>
+			</div>
+		</a>
+	</div> -->
 	<div class="container row">
 		<div style="border-color: transparent; background-color: transparent;" id="upward-nav" class="navbar navbar-default btn col-sm-1">
 			<img src="images/nav-arrow.png" width="25">
@@ -62,23 +76,22 @@
 					<li><a href="#shop-section"><i class="fa fa-shopping-cart"></i></a></li>
 					<li><a href="#gallery-section"><i class="fa fa-gallery"></i></a></li>
 					<li><a href="#maintainance-section"><i class="fa fa-wrench"></i></a></li>
-					<!--<li><a href="#map-section">MAP</a></li> -->
+					<!-- 				<li><a href="#map-section">MAP</a></li> -->
 					<li><a href="#helpline-section"><i class="fa fa-phone"></i></a></li>
 				</small>
 			</ul>
 		</div>
 	</div>
 
-
-	
 	<section id="shop-section" class="container">
 		<div class="text-center" style="padding-top: 5px;">
-			<div><h1 class="text-info">IN AND AROUND</h1></div>
+			<div><h1 class="text-info">IN & AROUND</h1></div>
 			<!--<div class="col-sm-offset-9">
 				<input class="form-control" type="text" name="search" placeholder="IN AND AROUND" id="search"></input>
 			</div>-->
 		</div>
 		<br/>
+
 		<!--////////////////////////////SHOPS-ROW-1//////////////////-->
 		<div class="container">
 			<div class="row">
@@ -186,48 +199,74 @@
 		</div>
 		<!--////////////////////////////END OF SHOPS////////////////////////////////////////-->
 	</section>
-	
-		<!--//////////////////////////-G A L L E R Y ///////////////////////////////////////////////////////////////////-->
-		<section id="gallery-section" class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1 class="gallery text-info text-center">GALLERY</h1>
-				</div>
+
+	<!--//////////////////////////-G A L L E R Y ///////////////////////////////////////////////////////////////////-->
+	<section id="gallery-section" class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="gallery text-info text-center">GALLERY</h1>
 			</div>
-			<div class="row">
-				<div class="col-sm-3">
-					<img style="height: 215px; width: 350px;" class="img-responsive img-rounded " src="images/gallery/building (1).JPG" alt="" >
-				</div>
-				<div class="col-sm-3">
-					<img class="img-responsive img-rounded " src="images/gallery/building (2).JPG" alt="" width="304" height="236">
-				</div>
-				<div class="col-sm-3">
-					<img class="img-responsive img-rounded " src="images/gallery/building (3).JPG" alt="" width="304" height="236">
-				</div>
-				<div class="col-sm-3">
-					<img class="img-responsive img-rounded " src="images/gallery/building (4).JPG" alt="" width="304" height="236">
-				</div>			
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<img style="height: 219px; width: 350px;" class="img-responsive img-rounded " src="images/gallery/building (1).JPG" alt="" >
 			</div>
-			
-			<div class="row">
-				<div class="col-sm-3">
-					<img class="img-responsive img-rounded " src="images/gallery/floor-plan (1).jpg" alt="" width="304" height="236">
-				</div>
-				<div class="col-sm-3">
-					<img class="img-responsive img-rounded " src="images/gallery/floor-plan (5).jpg" alt="" width="304" height="236">
-				</div>
-				<div class="col-sm-3">
-					<img class="img-responsive img-rounded " src="images/gallery/floor-plan (2).jpg" alt="" width="304" height="236">
-				</div>
-				<div class="col-sm-3">
-					<img class="img-responsive img-rounded " src="images/gallery/floor-plan (3).jpg" alt="" width="304" height="236">
-				</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/building (2).JPG" alt="" width="304" height="236">
 			</div>
-			
-			<div class="row">
-				<div class="col-sm-3">
-					<img class="img-responsive img-rounded " src="images/gallery/floor-plan (4).jpg" alt="" width="304" height="236">
-				</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/building (3).JPG" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/building (4).JPG" alt="" width="304" height="236">
+			</div>			
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (1).jpg" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (5).jpg" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (2).jpg" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (3).jpg" alt="" width="304" height="236">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/floor-plan (4).jpg" alt="" width="304" height="236">
+			</div>
+<!-- 			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/road.jpg" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/mountains.jpg" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/photograph.jpg" alt="" width="304" height="236">
+			</div>	 -->		
+		</div>
+		<br/>
+
+		<!-- <div class="row">
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/camp-fire.jpg" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/forest.jpg" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/giraffe.jpg" alt="" width="304" height="236">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive img-rounded " src="images/gallery/lightening.jpg" alt="" width="304" height="236">
+			</div>			
+		</div> -->
 	</section>
 	<!--------------------GALLERY ENDS HERE------------------------------------------------>
 	<!-- <section id="sign-in-section" class="container">
@@ -264,7 +303,7 @@
 
 
 
-<section id="maintainance-and-helpline-section">
+	<section id="maintainance-and-helpline-section">
 		<div id="maintainance-section" class="container">
 			<h1 class="text-info">MAINTAINANCE<br/><br/></h1>
 			<div class="row maintainance-first-row">
@@ -301,7 +340,7 @@
 					</div>
 					<div class="col-sm-3 maintain-style">
 						<div class="maintain">
-							<h1 class="maintainance-manager"><small>Manager</small></h1>
+							<h1><small>Manager</small></h1>
 							<p><small>Mahadev</small></p>
 							<p>+91 9632016220</p>
 						</div>
@@ -352,20 +391,17 @@
 
 
 
-
-
-
-	<!--///////////////////THE FOLLOWING SECTION DESCRIBES THE MAP //////////////////////////-->	
-	<!--<section id="map-section">
+		<!--///////////////////THE FOLLOWING SECTION DESCRIBES THE MAP //////////////////////////-->	
+		<!-- <section id="map-section"> -->
 <!-- 		<div class="container row">
 			<div class="col-sm-6 find">
 				<h1 class="find-us">FIND<br/>US<br/><span class="text-danger">HERE!</span></h1>
 			</div> -->
-		<!--	<div>
+			<!-- <div>
 				<div>
 					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-					<div id="gmap_canvas"><!--This block describes the dimensions of the map-->
-		<!--				<script type='text/javascript'>
+					<div id="gmap_canvas"> --><!--This block describes the dimensions of the map-->
+						<!--<script type='text/javascript'>
 							function init_map()
 							{
 								var myOptions = {zoom:10,center:new google.maps.LatLng(12.821398437691634,77.65988659458164),mapTypeId: google.maps.MapTypeId.HYBRID};
@@ -382,10 +418,12 @@
 			</div>
 		</section>
 		<!--//////////////////////MAP-SECTION ENDS HERE //////////////////////////////////////////-->
-	<!--	<hr/>-->
-
+		<!-- <hr/> -->
 		<footer>
-			<p>Made &nbsp;with&nbsp;<span style="color: #FF6600;">&hearts;</span> in<br/><img  title="demolabs2016@gmail.com" src="images/Demo Labs.png" height="35" alt="Demo Labs"> <span class="heart">2016</span></p><br/>
+			<p>Made &nbsp;with&nbsp;<span style="color: #FF6600;">&hearts;</span> in<br/><img title="demolabs2016@gmail.com" src="images/Demo Labs.png" height="35" alt="Demo Labs"> <span class="heart">2016</span></p><br/>
+<!-- 			<div id="email">
+				<a href="mailto:demolabs2016@gmail.com">demolabs2016@gmail.com</a>
+			</div> -->
 		</footer>
 	</body>
 	</html>
