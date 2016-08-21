@@ -24,36 +24,50 @@
 
 	<title>Smondo 3.0</title>
 	<script>
+	$(document).ready(function(){
+		$("#neotown-image").addClass("animated flip");
 		$(document).ready(function(){
-			$("#neotown-image").addClass("animated flip");
+			$("#upward-nav").click(function(){
+				$("#menuu").fadeIn();
+				$("#menuu").fadeOut(6000);
+			});
 		});
-	</script>
+	});
+</script>
 </head>
 <body>
 	<section id="section-1">
 		<div>
 			<img id="neotown-image" class="img-responsive" src="images/smondo_sym.png" width="500px" height="260px" alt="Neotown Smondo 3">
 		</div>
+
 		<nav id="nav">
 			<ul>
-				<!--<li><a href="section-1">HOME</a></li>-->
+				<!-- <li><a href="#section-1">HOME</a></li> -->
 				<li><a href="#shop-section">IN & AROUND</a></li>
 				<li><a href="#gallery-section">GALLERY</a></li>
 				<li><a href="#maintainance-section">MAINTAINANCE</a></li>
+				<!-- <li><a href="#map-section">MAP</a></li> -->
 				<li><a href="#helpline-section">HELPLINE</a></li>
-				<!--<li><a href="#map-section">MAP</a></li>-->
 			</ul>
 		</nav>
 	</section>
 
-	<div>
-		<a href="#section-1" class="text-center">
-			<div id="upward-nav" class="btn">
-				<p>up</p>
-			</div>
-		</a>
+	<div class="container row">
+		<div style="border-color: transparent; background-color: transparent;" id="upward-nav" class="navbar navbar-default btn">
+			<img src="images/nav-arrow.png" width="25">
+			<ul id="menuu" class="nav navbar-nav col-sm-5">
+				<small>
+					<li><a href="#shop-section">IN & AROUND</i></a></li>
+					<li><a href="#gallery-section">GALLERY</a></li>
+					<li><a href="#maintainance-section">MAINTAINANCE</a></li>
+					<!-- 				<li><a href="#map-section">MAP</a></li> -->
+					<li><a href="#helpline-section">HELPLINE</a></li>
+				</small>
+			</ul>
+		</div>
 	</div>
-
+	
 	<section id="shop-section" class="container">
 		<div class="text-center" style="padding-top: 5px;">
 			<div><h1 class="text-info">IN AND AROUND</h1></div>
@@ -62,7 +76,6 @@
 			</div>-->
 		</div>
 		<br/>
-
 		<!--////////////////////////////SHOPS-ROW-1//////////////////-->
 		<div class="container">
 			<div class="row">
