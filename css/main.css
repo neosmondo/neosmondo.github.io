@@ -7,7 +7,7 @@ body
 nav{
 	padding-top: 13%;
 /*	background-color: #222222;
-	padding-top: 10px;*/
+padding-top: 10px;*/
 }
 img{
 	margin-left: auto;
@@ -19,7 +19,7 @@ img{
 	height: 702px;
 	max-height: 702px;
 	width: 100%;
-	background-image: url(/images/blue.jpg);
+	background-image: url(images/blue.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	
@@ -40,7 +40,7 @@ ul li a
 	font-size: 125%;
 	padding: 10px;
 	text-align: center;
-	font-family: 'Oswald', sans-serif;
+	font-family: sans-serif; /*oswald*/
 }
 ul li
 {
@@ -208,22 +208,6 @@ input[type=text]:focus{
 	letter-spacing: 3px;
 	color: #593C1F;
 }
-footer{
-	width: 100%;
-	height: auto;
-	background-color: #D3EDEC;
-	/*background-image: url(images/blue.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;*/
-}	
-footer p{
-	color: #777;
-	font-family: cursive;
-	text-align: center;
-}
-#footer-image{
-	padding-top: -10px;
-}
 .heart{
 	font-size: 95%;
 	transition: 1s;
@@ -242,12 +226,7 @@ hr{
 	/*border: 1px solid black;*/
 }
 .maintain{
-	margin-top: -20px;
-}
-.maintainance-manager{
-	margin: 0px;
-	padding-top: 20px;
-	padding-bottom: 9px;
+	
 }
 #maintainance-and-helpline-section .maintainance-first-row{
 	margin-top: -15px;
@@ -264,24 +243,53 @@ hr{
 	padding-bottom: 30px;
 }
 #upward-nav{
-	float: right;
-	/*background: linear-gradient(black, black);*/
-	background-color: #3f3f3f;
-	color: #ebebeb;
 	outline: none;
-	height: 40px;
-	width: 40px;
 	position: fixed;
 	left: 1%;
-	bottom: 20px;
-	transition: 0.8s;
-	opacity: 0.3;
+	bottom: -20px;
+	transition: 0.5s;
+	opacity: 0.5;
 	z-index: 1;
 }
 #upward-nav:hover{
-	background-color: #2a2a2a;
-	opacity: 0.9;
+	background-color: transparent;/* #2a2a2a;*/
+	opacity: 1.0;
+}
+#menuu{
+	display: none;
+	width: 420px;
+	padding: 0;
+	margin-top: -10px;
+	position: fixed;
+	left: 64px;
+	bottom: 17px;
+}
+#menuu li{
+	margin: 0 -5px 0;
+}
+#menuu li a{
+	font-family: sans-serif;
 }
 #gallery-section .row div{
 	padding: 10px;
+}
+footer{
+	width: 100%;
+	height: auto;
+	background-color: #D3EDEC;
+}	
+footer p{
+	color: #777;
+	font-family: cursive;
+	text-align: center;
+	/*background-color: yellow;*/
+}
+#footer-image{
+	padding-top: -10px;
+}
+#email{
+	/*background-color: yellow;*/
+	width: 175px;
+	margin-left: 86%;
+	margin-top: -50px;
 }
