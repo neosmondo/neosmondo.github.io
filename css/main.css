@@ -177,9 +177,11 @@ input[type=text]:focus{
 .teatime{
 	color: #E99944;
 }
-.village img{
+.village{
+	color: #593C1F;
+}
+#village img{
 	margin-top: -9px;
-	color: #456;
 	text-decoration: none;
 }
 .ramakrishna-hospital{
