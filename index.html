@@ -23,14 +23,16 @@
 	<script src="bootstrap/bootstrap.min.js"></script><!--Compiled JavaScript-->
 
 	<title>Smondo 3.0</title>
-<script>
-	$(document).ready(function(){
-		$("#neotown-image").addClass("animated flip");
-		$(document).ready(function(){
-			$("#upward-nav").click(function(){
-				$("#menuu").fadeIn();
-			});
+	
+ <script>
+ 	$(document).ready(function(){
+ 		$("#neotown-image").addClass("animated flip");
+ 		$(document).ready(function(){
+ 			$("#upward-nav").click(function(){
+ 				$("#menuu").fadeIn();
+ 			});
 
+			//Home symbol arrival and dissapear
 			$(window).scroll(function(){                          
 				if ($(this).scrollTop() > 700) {
 					$('#upward-nav').show();
@@ -54,11 +56,9 @@
 				});
 			}
 			scrollNav();
+			
 		});
  	});
-		});
-	});
-</script>
 </head>
 <body>
 	<section id="section-1">
