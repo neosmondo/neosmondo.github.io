@@ -208,7 +208,7 @@ hr{
 	outline: none;
 	position: fixed;
 	left: -1%;
-	bottom: -16px;
+	bottom: -15px;
 	transition: 0.5s;
 	opacity: 0.7;
 	z-index: 999;
