@@ -245,7 +245,7 @@ hr{
 #upward-nav{
 	outline: none;
 	position: fixed;
-/*	left: -1%;*/
+	left: -1%;
 	bottom: -16px;
 	transition: 0.5s;
 	opacity: 0.5;
