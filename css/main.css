@@ -5,9 +5,7 @@ body
 	padding: 0;
 }
 nav{
-	padding-top: 13%;
-/*	background-color: #222222;
-padding-top: 10px;*/
+	padding-top: 17%;
 }
 img{
 	margin-left: auto;
@@ -22,10 +20,6 @@ img{
 	background-image: url(/images/blue.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	
-	/*border-bottom: 1px none #B22222; /*try "inset", ridge" or "groove"
-	border-bottom-left-radius: 30%;
-	border-bottom-right-radius: 30%;*/
 }
 ul
 {
@@ -48,10 +42,6 @@ ul li
 	padding:  2px;
 	display: inline-block;
 }
-/*.active
-{
-	color: #C73B40;
-}*/
 ul a:hover
 {	
 	color:#C73B40;
@@ -98,7 +88,7 @@ ul a:active{
 	margin-top: -25px;
 	padding-bottom: 50px;
 	font-size: 50px;
-	/*	letter-spacing: 70px;*/
+	/*letter-spacing: 70px;*/
 }
 .img-rounded{
 	opacity: 0.8;
@@ -111,15 +101,6 @@ ul a:active{
 	transform: scale(1.14);
 	box-shadow: 0 0 3px 2px #EBEBEB; /*text-info color -> #81DAF5*/
 }
-
-/*.maintainance{
-	width: 100%;
-	height: 150px;
-	padding: 0px;
-	background-color: #EBEBEB;
-	/*border: 1px solid black;*/
-/*	border-radius: 5px;
-}*/
 #shop-section{
 	padding-bottom: 10px;
 }
@@ -227,9 +208,6 @@ hr{
 	padding: 10px 0 0px 0;
 	text-align: center;
 	/*border: 1px solid black;*/
-}
-.maintain{
-	
 }
 #maintainance-and-helpline-section .maintainance-first-row{
 	margin-top: -15px;
