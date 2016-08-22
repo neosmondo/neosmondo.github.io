@@ -6,6 +6,8 @@ body
 }
 nav{
 	padding-top: 13%;
+/*	background-color: #222222;
+padding-top: 10px;*/
 }
 img{
 	margin-left: auto;
@@ -119,7 +121,7 @@ ul a:active{
 /*	border-radius: 5px;
 }*/
 #shop-section{
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 }
 #sign-in-section{
 	width: 100%;
@@ -148,6 +150,9 @@ input[type=text]:focus{
 }
 #novel-fresh{
 	padding-top: 16px;
+}
+#leo-fitness{
+	padding-top: 35px;
 }
 .bold{
 	font-weight: bold;
