@@ -6,8 +6,6 @@ body
 }
 nav{
 	padding-top: 13%;
-/*	background-color: #222222;
-padding-top: 10px;*/
 }
 img{
 	margin-left: auto;
@@ -248,7 +246,7 @@ hr{
 	left: -1%;
 	bottom: -16px;
 	transition: 0.5s;
-	opacity: 0.5;
+	opacity: 0.7;
 	z-index: 999;
 	display: none;
 }
