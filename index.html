@@ -26,37 +26,17 @@
  <script>
  	$(document).ready(function(){
  		$("#neotown-image").addClass("animated flip");
- 		$(document).ready(function(){
- 			$("#upward-nav").click(function(){
- 				$("#menuu").fadeIn();
- 			});
-
-			//Home symbol arrival and dissapear
-			$(window).scroll(function(){                          
-				if ($(this).scrollTop() > 700) {
-					$('#upward-nav').show();
-				} else {
-					$('#upward-nav').hide();
-				}
-			});
-			//Scrolling navigation
-			function scrollNav() {
-				$('#nav a').click(function(){  
-					$('html, body').stop().animate({
-						scrollTop: $( $(this).attr('href') ).offset().top - 160
-					}, 2100);
-					return false;
-				});
-				$('#upward-nav a').click(function(){  
-					$('html, body').stop().animate({
-						scrollTop: $( $(this).attr('href') ).offset().top - 160
-					}, 500);
-					return false;
-				});
+ 		$("#upward-nav").click(function(){
+ 			$("#menuu").fadeIn();
+ 		});
+		//Home symbol arrival and dissapear
+		$(window).scroll(function(){                    
+			if ($(this).scrollTop() > 700) {
+				$('#upward-nav').show();
+			} else {
+				$('#upward-nav').hide();
 			}
-			scrollNav();
-			
-		});
+		});;
  	});
  </script>
 </head>
@@ -70,10 +50,10 @@
 			<ul>
 				<!-- <li><a href="#section-1">HOME</a></li> -->
 				<li><a href="#shop-section">IN & AROUND</a></li>
-				<li><a href="#gallery-row-1">GALLERY</a></li>
-				<li><a href="#maintenance-first-row">MAINTENANCE</a></li>
+				<li><a href="#gallery-section">GALLERY</a></li>
+				<li><a href="#maintenance-section">MAINTENANCE</a></li>
 				<!-- <li><a href="#map-section">MAP</a></li> -->
-				<li><a href="#helpline-table">HELPLINE</a></li>
+				<li><a href="#helpline-section">HELPLINE</a></li>
 			</ul>
 		</nav>
 	</section>
