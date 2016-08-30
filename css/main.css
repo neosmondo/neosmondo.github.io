@@ -16,8 +16,8 @@ img{
 #section-1
 {
 	padding-top: 10%;
-	height: 702px;
-	max-height: 702px;
+	height: 100vh;
+	max-height: 100vh;
 	width: 100%;
 	background-image: url(/images/blue.jpg);
 	background-repeat: no-repeat;
